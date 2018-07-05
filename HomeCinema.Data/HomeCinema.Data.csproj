@@ -54,6 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BulkConfiguration.cs" />
+    <Compile Include="Configurations\BookCategoryConfiguration.cs" />
+    <Compile Include="Configurations\BookConfiguration.cs" />
+    <Compile Include="Configurations\BulkConfiguration.cs" />
     <Compile Include="Configurations\EntityBaseConfiguration.cs" />
     <Compile Include="Configurations\GenreConfiguration.cs" />
     <Compile Include="Configurations\RentalConfiguration.cs" />
@@ -72,9 +76,9 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\DbFactory.cs" />
     <Compile Include="Infrastructure\IDbFactory.cs" />
-    <Compile Include="Migrations\201807010709493_initial.cs" />
-    <Compile Include="Migrations\201807010709493_initial.Designer.cs">
-      <DependentUpon>201807010709493_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201807010932184_initial.cs" />
+    <Compile Include="Migrations\201807010932184_initial.Designer.cs">
+      <DependentUpon>201807010932184_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,8 +101,8 @@
     <Content Include="uk\MockData.resources.dll" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807010709493_initial.resx">
-      <DependentUpon>201807010709493_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807010932184_initial.resx">
+      <DependentUpon>201807010932184_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

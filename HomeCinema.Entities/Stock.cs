@@ -22,4 +22,8 @@ namespace HomeCinema.Entities
         public bool IsAvailable { get; set; }
         public virtual ICollection<Rental> Rentals { get; set; }
     }
+
+
+
+
 }
