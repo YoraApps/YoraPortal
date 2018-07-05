@@ -19,4 +19,17 @@ namespace HomeCinema.Entities
         public string Name { get; set; }
         public virtual ICollection<Movie> Movies { get; set; }
     }
+    public class BookCategory : IEntityBase
+    {
+        public BookCategory()
+        {
+            Books = new List<Book>();
+        }
+        public int ID { get; set; }
+
+        public string Name { get; set; }
+
+        public virtual ICollection<Book> Books { get; set; }
+
+    }
 }

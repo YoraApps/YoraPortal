@@ -47,10 +47,19 @@
                 templateUrl: "scripts/spa/movies/edit.html",
                 controller: "movieEditCtrl"
             })
+            .when("/movies1", {
+                templateUrl: "scripts/spa/movies1/movies1.html",
+                controller: "movies1Ctrl"
+            }) 
+            .when("/movies2", {
+                templateUrl: "scripts/spa/movies2/movies2.html",
+                controller: "movies2Ctrl"
+            })
             .when("/rental", {
                 templateUrl: "scripts/spa/rental/rental.html",
                 controller: "rentStatsCtrl"
-            }).otherwise({ redirectTo: "/" });
+            })
+           .otherwise({ redirectTo: "/" });
     }
 
     run.$inject = ['$rootScope', '$location', '$cookieStore', '$http'];
